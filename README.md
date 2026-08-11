@@ -58,3 +58,15 @@ Scharstein & Szeliski, *A Comparison and Evaluation of Multi-View Stereo
 Reconstruction Algorithms*, CVPR 2006 — <https://vision.middlebury.edu/mview/>.
 The images ship with per-view calibration; the pipeline uses K only (ground-truth
 poses are never read during reconstruction).
+
+## License
+
+The code in this repository is licensed under the
+[Apache License 2.0](LICENSE).
+
+**That covers this code and nothing else.** The Middlebury multi-view datasets
+(`templeRing` and friends) are downloaded at run time from
+vision.middlebury.edu, which states no formal licence and asks that you cite
+Seitz et al., CVPR 2006. They are not redistributed here. pycolmap and COLMAP
+carry their own licence upstream. Check the terms yourself before any commercial
+use.
