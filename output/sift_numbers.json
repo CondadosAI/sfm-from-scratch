@@ -1,0 +1,247 @@
+{
+  "dataset": "templeRing",
+  "view": 0,
+  "pair_b": 2,
+  "image_size": [
+    640,
+    480
+  ],
+  "pyramid": {
+    "n_octaves": 9,
+    "gaussians_per_octave": 6,
+    "dogs_per_octave": 5,
+    "total_dogs": 45,
+    "extrema_levels_per_octave": 3,
+    "sigma0": 1.6,
+    "base_upsampled": true
+  },
+  "detection": {
+    "n_keypoints": 791,
+    "size_px": {
+      "min": 1.82,
+      "median": 3.27,
+      "p90": 9.13,
+      "max": 112.38
+    },
+    "octave_histogram": {
+      "-1": 448,
+      "0": 234,
+      "1": 65,
+      "2": 21,
+      "3": 20,
+      "4": 3
+    }
+  },
+  "orientation_example": {
+    "kp_xy": [
+      406.7,
+      156.0
+    ],
+    "kp_size_px": 4.39,
+    "kp_angle_deg": 88.6,
+    "hist_36bin": [
+      464.0,
+      46.8,
+      0.0,
+      0.0,
+      0.0,
+      130.0,
+      269.7,
+      1706.7,
+      7729.6,
+      4531.9,
+      1252.7,
+      1466.3,
+      893.5,
+      1041.9,
+      1223.8,
+      778.3,
+      4059.8,
+      2039.4,
+      600.1,
+      394.7,
+      395.6,
+      0.0,
+      683.5,
+      1057.8,
+      213.4,
+      1275.5,
+      890.6,
+      1939.5,
+      1207.2,
+      1526.3,
+      402.3,
+      307.2,
+      911.1,
+      83.7,
+      189.8,
+      0.0
+    ],
+    "dominant_bin_deg": 85
+  },
+  "ratio_test": {
+    "n_query_kp": 791,
+    "n_train_kp": 776,
+    "examples": {
+      "clear": {
+        "d1": 31.5,
+        "d2": 303.9,
+        "ratio": 0.104
+      },
+      "ambiguous": {
+        "d1": 349.5,
+        "d2": 349.5,
+        "ratio": 1.0
+      }
+    },
+    "survivors_by_threshold": {
+      "0.6": 173,
+      "0.7": 211,
+      "0.75": 237,
+      "0.8": 276,
+      "0.9": 409,
+      "1.0": 791
+    },
+    "lowe_ratio_used": 0.75,
+    "median_d1": 253.5,
+    "ransac_inliers": [
+      237,
+      217
+    ]
+  },
+  "invariance": {
+    "rot45": {
+      "n_kp_transformed": 747,
+      "matches": 588,
+      "correct_3px": 581,
+      "precision": 0.988
+    },
+    "scale_half": {
+      "n_kp_transformed": 332,
+      "matches": 276,
+      "correct_3px": 255,
+      "precision": 0.924
+    },
+    "dark_60pct": {
+      "n_kp_transformed": 165,
+      "matches": 174,
+      "correct_3px": 159,
+      "precision": 0.914
+    }
+  },
+  "viewpoint_sweep": {
+    "step_deg_assumed": 7.66,
+    "rows": [
+      {
+        "dv": 1,
+        "deg": 7.7,
+        "ratio_matches": 406,
+        "inliers": 391,
+        "passes_pipeline_gate": true
+      },
+      {
+        "dv": 2,
+        "deg": 15.3,
+        "ratio_matches": 237,
+        "inliers": 217,
+        "passes_pipeline_gate": true
+      },
+      {
+        "dv": 3,
+        "deg": 23.0,
+        "ratio_matches": 149,
+        "inliers": 125,
+        "passes_pipeline_gate": true
+      },
+      {
+        "dv": 4,
+        "deg": 30.6,
+        "ratio_matches": 98,
+        "inliers": 70,
+        "passes_pipeline_gate": true
+      },
+      {
+        "dv": 5,
+        "deg": 38.3,
+        "ratio_matches": 21,
+        "inliers": 9,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 6,
+        "deg": 46.0,
+        "ratio_matches": 23,
+        "inliers": 10,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 7,
+        "deg": 53.6,
+        "ratio_matches": 26,
+        "inliers": 10,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 8,
+        "deg": 61.3,
+        "ratio_matches": 18,
+        "inliers": 8,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 9,
+        "deg": 68.9,
+        "ratio_matches": 17,
+        "inliers": 8,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 10,
+        "deg": 76.6,
+        "ratio_matches": 23,
+        "inliers": 10,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 11,
+        "deg": 84.3,
+        "ratio_matches": 17,
+        "inliers": 8,
+        "passes_pipeline_gate": false
+      },
+      {
+        "dv": 12,
+        "deg": 91.9,
+        "ratio_matches": 23,
+        "inliers": 10,
+        "passes_pipeline_gate": false
+      }
+    ]
+  },
+  "patchlab_presets": {
+    "background": {
+      "xy": [
+        50,
+        60
+      ],
+      "l1": 0.001,
+      "l2": 0.0
+    },
+    "column_edge": {
+      "xy": [
+        277,
+        240
+      ],
+      "l1": 0.411,
+      "l2": 0.019
+    },
+    "base_corner": {
+      "xy": [
+        150,
+        320
+      ],
+      "l1": 0.442,
+      "l2": 0.318
+    }
+  }
+}

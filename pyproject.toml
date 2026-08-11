@@ -26,6 +26,7 @@ sfm-viz = "sfm_from_scratch.cli.viz:viz"
 sfm-frames = "sfm_from_scratch.cli.frames:frames"
 sfm-check = "sfm_from_scratch.cli.check:check"
 sfm-figures = "sfm_from_scratch.cli.figures:figures"
+sfm-sift-figures = "sfm_from_scratch.cli.sift_figures:sift_figures"
 sfm-webexport = "sfm_from_scratch.cli.webexport:webexport"
 
 [build-system]
